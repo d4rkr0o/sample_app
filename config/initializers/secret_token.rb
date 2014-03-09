@@ -19,6 +19,7 @@ def secure_token
 	else
 		token = SecureRandom.hex(64)
 		File.write(token_file, token)
+		token
 	end
 end
 
